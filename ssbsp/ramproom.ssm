@@ -1,0 +1,415 @@
+****
+*
+* Ramproom in SS map format, w'zoo
+*
+* Bastard is hand-written, too
+*
+****
+*
+* Notes for pgroups:
+*                   numx = polys in dir vertex 1 -> vertex 2    (or 4 -> 3)
+*                   numy = polys in dir vertex 2 -> vertex 3    (or 1 -> 4)
+*
+*                   texture co-ords are assumed to span whole texture
+*                   ie (0,0) -> (16383, 16383)
+*
+*                   ^- because i can't decide where to stick their co-ords d:
+*
+*                   Thus, the above is *TEMPORARY*, i'm saying this in advance
+*                   for a change (;
+*
+*                   textures listed in "x" dir, then "y" dir
+*
+*                   !NULL! means there's no texture, the poly's still there,
+*                   making the hull complete, but ss itself'll ignore it.
+*                   Useful when you know that a poly is going to be hidden.
+*
+****
+
+!TYPE    : MAP|BASIC
+
+#data
+{
+* central walkway dooder
+* edits: made top pgroup thinner, in order to close de box
+
+#ihull
+{
+#pgroup
+{
+vertex   : -250 0 200
+vertex   : 250 0 200
+vertex   : 250 0 100
+vertex   : -250 0 100
+numx     : 5
+numy     : 1
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR3
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR3
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR3
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR3
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR3
+}
+
+
+#poly
+{
+numverts : 4
+vertex   : 250 0 200 16383 0
+vertex   : -250 0 200 0 0
+vertex   : -250 13 200 0 2303
+vertex   : 250 13 200 16383 2303
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : -250 0 200 0 0
+vertex   : -250 0 100 16383 0
+vertex   : -250 13 100 16383 2303
+vertex   : -250 13 200 0 2303
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : 250 0 100 16383 0
+vertex   : 250 0 200 0 0
+vertex   : 250 13 200 0 2303
+vertex   : 250 13 100 16383 2303
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : -250 0 100 0 0
+vertex   : -150 0 100 16383 0
+vertex   : -150 13 100 16383 2303
+vertex   : -250 13 100 0 2303
+texture  : CORE/TEXPACKS/RAMPSSB:HAZARD1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -150 0 100 0 0
+vertex   : -50 0 100 16383 0
+vertex   : -50 13 100 16383 2303
+vertex   : -150 13 100 0 2303
+texture  : CORE/TEXPACKS/RAMPSSB:HAZARD1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -50 0 100 0 0
+vertex   : 50 0 100 16383 0
+vertex   : 50 13 100 16383 2303
+vertex   : -50 13 100 0 2303
+texture  : CORE/TEXPACKS/RAMPSSB:HAZARD1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 50 0 100 0 0
+vertex   : 150 0 100 16383 0
+vertex   : 150 13 100 16383 2303
+vertex   : 50 13 100 0 2303
+texture  : CORE/TEXPACKS/RAMPSSB:HAZARD1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 150 0 100 0 0
+vertex   : 250 0 100 16383 0
+vertex   : 250 13 100 16383 2303
+vertex   : 150 13 100 0 2303
+texture  : CORE/TEXPACKS/RAMPSSB:HAZARD1
+}
+
+
+
+#pgroup
+{
+vertex   : -250 13 200
+vertex   : -250 13 100
+vertex   : 250 13 100
+vertex   : 250 13 200
+numx     : 1
+numy     : 5
+texture  : CORE/TEXPACKS/RAMPSSB:ROOF2
+texture  : CORE/TEXPACKS/RAMPSSB:ROOF3
+texture  : CORE/TEXPACKS/RAMPSSB:ROOF3
+texture  : CORE/TEXPACKS/RAMPSSB:ROOF3
+texture  : CORE/TEXPACKS/RAMPSSB:ROOF4
+}
+}
+
+* left side rampage
+* edits: shifted the walkway ends, did some cappage.
+
+#ihull
+{
+#pgroup
+{
+vertex   : -350 0 100
+vertex   : -250 0 100
+vertex   : -250 100 -100
+vertex   : -350 100 -100
+numx     : 1
+numy     : 2
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR1
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR1
+}
+
+* bit i shiftzed from the walkway top
+
+#poly
+{
+numverts : 4
+vertex   : -350 0 200 0 0
+vertex   : -250 0 200 16383 0
+vertex   : -250 0 100 16383 16383
+vertex   : -350 0 100 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR2
+}
+
+* cap for the bit touching the side wall
+
+#poly
+{
+numverts : 4
+vertex   : -350 0 200 0 0
+vertex   : -350 0 100 16383 0
+vertex   : -350 100 -100 16383 16383
+vertex   : -350 100 200 0 16383
+texture  : !NULL!
+}
+
+* cap for underneathy
+
+#poly
+{
+numverts : 4
+vertex   : -250 100 200 16383 0
+vertex   : -350 100 200 0 0
+vertex   : -350 100 -100 0 16383
+vertex   : -250 100 -100 16383 16383
+texture  : !NULL!
+}
+
+* and a final cap for the backerooooooooooSNA
+
+#poly
+{
+numverts : 4
+vertex   : -250 0 200 0 0
+vertex   : -350 0 200 16383 0
+vertex   : -350 100 200 16383 16383
+vertex   : -250 100 200 0 16383
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 3
+vertex   : -250 100 -100 0 16383
+vertex   : -250 50 0 16383 8191
+vertex   : -250 100 0 16383 16383
+texture  : CORE/TEXPACKS/RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -250 50 0 0 8191
+vertex   : -250 0 100 16383 0
+vertex   : -250 100 100 16383 16383
+vertex   : -250 100 0 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -250 0 100 0 0
+vertex   : -250 0 200 16383 0
+vertex   : -250 100 200 16383 16383
+vertex   : -250 100 100 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:WALL1
+}
+}
+
+* right side rampage
+* edits: copied of the fixed lefty ramp, and flippied where i thought it
+*        needed it, but don't hold me to it (:
+
+#ihull
+{
+#pgroup
+{
+vertex   : 250 0 100
+vertex   : 350 0 100
+vertex   : 350 100 -100
+vertex   : 250 100 -100
+numx     : 1
+numy     : 2
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR1
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR1
+}
+
+* bit i shiftzed from the walkway top
+
+#poly
+{
+numverts : 4
+vertex   : 250 0 200 0 0
+vertex   : 350 0 200 16383 0
+vertex   : 350 0 100 16383 16383
+vertex   : 250 0 100 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:FLOOR3
+}
+
+* cap for the bit touching the side wall
+
+#poly
+{
+numverts : 4
+vertex   : 350 100 -100 16383 16383
+vertex   : 350 0 100 16383 0
+vertex   : 350 0 200 0 0
+vertex   : 350 100 200 0 16383
+texture  : !NULL!
+}
+
+* cap for underneathy
+
+#poly
+{
+numverts : 4
+vertex   : 350 100 200 0 0
+vertex   : 250 100 200 16383 0
+vertex   : 250 100 -100 16383 16383
+vertex   : 350 100 -100 0 16383
+texture  : !NULL!
+}
+
+* and a final cap for the backerooooooooooSNA
+
+#poly
+{
+numverts : 4
+vertex   : 350 0 200 16383 0
+vertex   : 250 0 200 0 0
+vertex   : 250 100 200 0 16383
+vertex   : 350 100 200 16383 16383
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 3
+vertex   : 250 100 0 0 8191
+vertex   : 250 50 0 16383 16383
+vertex   : 250 100 -100 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 250 0 100 0 0
+vertex   : 250 50 0 0 8191
+vertex   : 250 100 0 16383 16383
+vertex   : 250 100 100 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 250 0 200 0 0
+vertex   : 250 0 100 16383 0
+vertex   : 250 100 100 16383 16383
+vertex   : 250 100 200 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:WALL1
+}
+}
+
+* ? capped pillaaaaaaaaaarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+* edits: capped?
+
+#ihull
+{
+
+* bork, top
+
+#poly
+{
+numverts : 4
+vertex   : 25 13 175 8191 0
+vertex   : -25 13 175 0 0
+vertex   : -25 13 125 0 16383
+vertex   : 25 13 125 8191 16383
+texture  : !NULL!
+}
+
+* bork, bottom
+
+#poly
+{
+numverts : 4
+vertex   : -25 100 175 0 0
+vertex   : 25 100 175 8191 0
+vertex   : 25 100 125 8191 16383
+vertex   : -25 100 125 0 16383
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : -25 13 125 0 0
+vertex   : 25 13 125 8191 0
+vertex   : 25 100 125 8191 16383
+vertex   : -25 100 125 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:PILLAR1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -25 13 175 0 0
+vertex   : -25 13 125 8191 0
+vertex   : -25 100 125 8191 16383
+vertex   : -25 100 175 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:PILLAR1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 25 13 125 0 0
+vertex   : 25 13 175 8191 0
+vertex   : 25 100 175 8191 16383
+vertex   : 25 100 125 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:PILLAR1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 25 13 175 0 0
+vertex   : -25 13 175 8191 0
+vertex   : -25 100 175 8191 16383
+vertex   : 25 100 175 0 16383
+texture  : CORE/TEXPACKS/RAMPSSB:PILLAR1
+}
+
+}
+
+}

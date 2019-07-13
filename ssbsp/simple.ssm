@@ -1,0 +1,197 @@
+****
+*
+* Two test cubes, w'zoo!
+*
+****
+
+
+!TYPE    : MAP|BASIC
+
+#data
+{
+#ohull
+{
+#pgroup
+{
+numverts : 4
+vertex   : -200 -200 -200
+vertex   : 200 -200 -200
+vertex   : 200 200 -200
+vertex   : -200 200 -200
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : 200 -200 200
+vertex   : -200 -200 200
+vertex   : -200 200 200
+vertex   : 200 200 200
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : -200 -200 200
+vertex   : 200 -200 200
+vertex   : 200 -200 -200
+vertex   : -200 -200 -200
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : -200 200 -200
+vertex   : 200 200 -200
+vertex   : 200 200 200
+vertex   : -200 200 200
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : -200 -200 200
+vertex   : -200 -200 -200
+vertex   : -200 200 -200
+vertex   : -200 200 200
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : 200 -200 -200
+vertex   : 200 -200 200
+vertex   : 200 200 200
+vertex   : 200 200 -200
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : -800 800 -800
+vertex   : 800 800 -800
+vertex   : 800 -800 -800
+vertex   : -800 -800 -800
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:AMBT1_1
+texture  : CORE\TEXPACKS\RAMPSSB:AMBT1_1
+texture  : CORE\TEXPACKS\RAMPSSB:AMBT1_1
+texture  : CORE\TEXPACKS\RAMPSSB:AMBT1_1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : 800 800 800
+vertex   : -800 800 800
+vertex   : -800 -800 800
+vertex   : 800 -800 800
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : -800 -800 -800
+vertex   : 800 -800 -800
+vertex   : 800 -800 800
+vertex   : -800 -800 800
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : -800 800 800
+vertex   : 800 800 800
+vertex   : 800 800 -800
+vertex   : -800 800 -800
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : -800 800 800
+vertex   : -800 800 -800
+vertex   : -800 -800 -800
+vertex   : -800 -800 800
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+numverts : 4
+vertex   : 800 800 -800
+vertex   : 800 800 800
+vertex   : 800 -800 800
+vertex   : 800 -800 -800
+numx     : 2
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+}
+
+}
+

@@ -1,0 +1,49 @@
+VectorCFile Project "sstracer" 
+ Version {
+ Save 1 . 0 
+ LoadMin 1 . 0 
+ Compiler
+ { "Default" "BD560F13-AF76-414E-9E7C-D115F8A02DAD" 1 "cl.exe" } Configuration
+ { "Win32 Release"  Project
+ { "sstracer" 0 ProjectSettings
+ 0 Add "" File
+ ".\sstracer\compile.c"  File
+ ".\sstracer\image.c"  File
+ ".\sstracer\load.c"  File
+ ".\sstracer\matrix.c"  File
+ ".\sstracer\patch.c"  File
+ ".\sstracer\save.c"  File
+ ".\sstracer\scene.c"  File
+ ".\sstracer\texpack.c"  File
+ ".\sstracer\vector.c"  File
+ ".\sstracer\compile.h"  File
+ ".\sstracer\image.h"  File
+ ".\sstracer\load.h"  File
+ ".\sstracer\matrix.h"  File
+ ".\sstracer\patch.h"  File
+ ".\sstracer\save.h"  File
+ ".\sstracer\scene.h"  File
+ ".\sstracer\texpack.h"  File
+ ".\sstracer\vector.h"  } } Configuration
+ { "Win32 Debug"  Project
+ { "sstracer" 0 ProjectSettings
+ 0 Add "" File
+ ".\sstracer\compile.c"  File
+ ".\sstracer\image.c"  File
+ ".\sstracer\load.c"  File
+ ".\sstracer\matrix.c"  File
+ ".\sstracer\patch.c"  File
+ ".\sstracer\save.c"  File
+ ".\sstracer\scene.c"  File
+ ".\sstracer\texpack.c"  File
+ ".\sstracer\vector.c"  File
+ ".\sstracer\compile.h"  File
+ ".\sstracer\image.h"  File
+ ".\sstracer\load.h"  File
+ ".\sstracer\matrix.h"  File
+ ".\sstracer\patch.h"  File
+ ".\sstracer\save.h"  File
+ ".\sstracer\scene.h"  File
+ ".\sstracer\texpack.h"  File
+ ".\sstracer\vector.h"  } } }
+ 

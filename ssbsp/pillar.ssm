@@ -1,0 +1,686 @@
+s****
+*
+* Ramproom in SS map format, w'zoo
+*
+* Bastard is hand-written, too
+*
+****
+*
+* Notes for pgroups:
+*                   numx = polys in dir vertex 1 -> vertex 2    (or 4 -> 3)
+*                   numy = polys in dir vertex 2 -> vertex 3    (or 1 -> 4)
+*
+*                   texture co-ords are assumed to span whole texture
+*                   ie (0,0) -> (16383, 16383)
+*
+*                   ^- because i can't decide where to stick their co-ords d:
+*
+*                   Thus, the above is *TEMPORARY*, i'm saying this in advance
+*                   for a change (;
+*
+*                   textures listed in "x" dir, then "y" dir
+*
+*                   !NULL! means there's no texture, the poly's still there,
+*                   making the hull complete, but ss itself'll ignore it.
+*                   Useful when you know that a poly is going to be hidden.
+*
+****
+
+!TYPE    : MAP|BASIC
+
+#data
+{
+#ohull
+{
+#pgroup
+{
+vertex   : -8750 -2500 5000
+vertex   : -8750 -2500 -5000
+vertex   : -1250 -2500 -5000
+vertex   : -1250 -2500 5000
+numx     : 4
+numy     : 3
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+}
+
+#pgroup
+{
+vertex   : -8750 -2500 -5000
+vertex   : -8750 -2500 5000
+vertex   : -8750 2500 5000
+vertex   : -8750 2500 -5000
+numx     : 4
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : !NULL!
+}
+
+#pgroup
+{
+vertex   : -8750 -2500 5000
+vertex   : -1250 -2500 5000
+vertex   : -1250 2500 5000
+vertex   : -8750 2500 5000
+numx     : 3
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : !NULL!
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+}
+
+#pgroup
+{
+vertex   : -8750 2500 5000
+vertex   : -1250 2500 5000
+vertex   : -1250 2500 -5000
+vertex   : -8750 2500 -5000
+numx     : 3
+numy     : 4
+texture  : !NULL!
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : !NULL!
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : !NULL!
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+vertex   : -1250 -2500 -5000
+vertex   : -8750 -2500 -5000
+vertex   : -8750 2500 -5000
+vertex   : -1250 2500 -5000
+numx     : 3
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+}
+
+#pgroup
+{
+vertex   : -1250 -2500 -2500
+vertex   : -1250 -2500 -5000
+vertex   : -1250 2500 -5000
+vertex   : -1250 2500 -2500
+numx     : 1
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+}
+}
+
+#ohull
+{
+#pgroup
+{
+vertex   : -1250 -2500 5000
+vertex   : -1250 -2500 -2500
+vertex   : 1250 -2500 -2500
+vertex   : 1250 -2500 5000
+numx     : 3
+numy     : 1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+}
+
+#pgroup
+{
+vertex   : -1250 -2500 5000
+vertex   : 1250 -2500 5000
+vertex   : 1250 2500 5000
+vertex   : -1250 2500 5000
+numx     : 1
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+}
+
+#pgroup
+{
+vertex   : -1250 2500 5000
+vertex   : 1250 2500 5000
+vertex   : 1250 2500 -2500
+vertex   : -1250 2500 -2500
+numx     : 1
+numy     : 3
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+vertex   : 1250 -2500 -2500
+vertex   : -1250 -2500 -2500
+vertex   : -1250 2500 -2500
+vertex   : 1250 2500 -2500
+numx     : 1
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_2_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_2_2
+}
+}
+
+#ohull
+{
+#pgroup
+{
+vertex   : 1250 -2500 5000
+vertex   : 1250 -2500 -5000
+vertex   : 8750 -2500 -5000
+vertex   : 8750 -2500 5000
+numx     : 4
+numy     : 3
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+texture  : CORE\TEXPACKS\RAMPSSB:ROOF1
+}
+
+#pgroup
+{
+vertex   : 8750 -2500 5000
+vertex   : 8750 -2500 -5000
+vertex   : 8750 2500 -5000
+vertex   : 8750 2500 5000
+numx     : 4
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+}
+
+#pgroup
+{
+vertex   : 1250 -2500 5000
+vertex   : 8750 -2500 5000
+vertex   : 8750 2500 5000
+vertex   : 1250 2500 5000
+numx     : 3
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+}
+
+#pgroup
+{
+vertex   : 1250 2500 5000
+vertex   : 8750 2500 5000
+vertex   : 8750 2500 -5000
+vertex   : 1250 2500 -5000
+numx     : 3
+numy     : 4
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : !NULL!
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : !NULL!
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : !NULL!
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+#pgroup
+{
+vertex   : 8750 -2500 -5000
+vertex   : 1250 -2500 -5000
+vertex   : 1250 2500 -5000
+vertex   : 8750 2500 -5000
+numx     : 3
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_3_2
+}
+
+#pgroup
+{
+vertex   : 1250 -2500 -5000
+vertex   : 1250 -2500 -2500
+vertex   : 1250 2500 -2500
+vertex   : 1250 2500 -5000
+numx     : 1
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_1_1
+texture  : CORE\TEXPACKS\RAMPSSB:FPLR_1_2
+}
+}
+
+* central walkway dooder
+* edits: made top pgroup thinner, in order to close de box
+
+#ihull
+{
+#pgroup
+{
+vertex   : -6250 0 5000
+vertex   : 6250 0 5000
+vertex   : 6250 0 2500
+vertex   : -6250 0 2500
+numx     : 5
+numy     : 1
+texture  : CORE\TEXPACKS\RAMPSSB:GRATE
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US2
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+texture  : CORE\TEXPACKS\RAMPSSB:GRATE
+}
+
+
+#poly
+{
+numverts : 4
+vertex   : 6250 0 5000 16383 0
+vertex   : -6250 0 5000 0 0
+vertex   : -6250 250 5000 0 2303
+vertex   : 6250 250 5000 16383 2303
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : -6250 0 5000 0 0
+vertex   : -6250 0 2500 16383 0
+vertex   : -6250 250 2500 16383 2303
+vertex   : -6250 250 5000 0 2303
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : 6250 0 2500 16383 0
+vertex   : 6250 0 5000 0 0
+vertex   : 6250 250 5000 0 2303
+vertex   : 6250 250 2500 16383 2303
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : -6250 0 2500 0 0
+vertex   : -3750 0 2500 16383 0
+vertex   : -3750 250 2500 16383 2303
+vertex   : -6250 250 2500 0 2303
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -3750 0 2500 0 0
+vertex   : -1250 0 2500 16383 0
+vertex   : -1250 250 2500 16383 2303
+vertex   : -3750 250 2500 0 2303
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -1250 0 2500 0 0
+vertex   : 1250 0 2500 16383 0
+vertex   : 1250 250 2500 16383 2303
+vertex   : -1250 250 2500 0 2303
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_BRC
+}
+
+#poly
+{
+numverts : 4
+vertex   : 1250 0 2500 0 0
+vertex   : 3750 0 2500 16383 0
+vertex   : 3750 250 2500 16383 2303
+vertex   : 1250 250 2500 0 2303
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 3750 0 2500 0 0
+vertex   : 6250 0 2500 16383 0
+vertex   : 6250 250 2500 16383 2303
+vertex   : 3750 250 2500 0 2303
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+}
+
+* ramp uside?
+
+#pgroup
+{
+vertex   : -6250 250 2500
+vertex   : 6250 250 2500
+vertex   : 6250 250 5000
+vertex   : -6250 250 5000
+numx     : 5
+numy     : 1
+texture  : CORE\TEXPACKS\RAMPSSB:GRATE
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US2
+texture  : CORE\TEXPACKS\RAMPSSB:RAMP_US1
+texture  : CORE\TEXPACKS\RAMPSSB:GRATE
+}
+}
+
+* left side rampage
+* edits: shifted the walkway ends, did some cappage.
+
+#ihull
+{
+#pgroup
+{
+vertex   : -8750 0 2500
+vertex   : -6250 0 2500
+vertex   : -6250 2500 -2500
+vertex   : -8750 2500 -2500
+numx     : 1
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+* bit i shiftzed from the walkway top
+
+#poly
+{
+numverts : 4
+vertex   : -8750 0 5000 0 0
+vertex   : -6250 0 5000 16383 0
+vertex   : -6250 0 2500 16383 16383
+vertex   : -8750 0 2500 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+* cap for the bit touching the side wall
+
+#poly
+{
+numverts : 4
+vertex   : -8750 0 5000 0 0
+vertex   : -8750 0 2500 16383 0
+vertex   : -8750 2500 -2500 16383 16383
+vertex   : -8750 2500 5000 0 16383
+texture  : !NULL!
+}
+
+* cap for underneathy
+
+#poly
+{
+numverts : 4
+vertex   : -6250 2500 5000 16383 0
+vertex   : -8750 2500 5000 0 0
+vertex   : -8750 2500 -2500 0 16383
+vertex   : -6250 2500 -2500 16383 16383
+texture  : !NULL!
+}
+
+* and a final cap for the backerooooooooooSNA
+
+#poly
+{
+numverts : 4
+vertex   : -6250 0 5000 0 0
+vertex   : -8750 0 5000 16383 0
+vertex   : -8750 2500 5000 16383 16383
+vertex   : -6250 2500 5000 0 16383
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 3
+vertex   : -6250 2500 -2500 16383 0
+vertex   : -6250 1250 0 0 8191
+vertex   : -6250 2500 0 0 0
+texture  : CORE\TEXPACKS\RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -6250 1250 0 0 8191
+vertex   : -6250 0 2500 16383 0
+vertex   : -6250 2500 2500 16383 16383
+vertex   : -6250 2500 0 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -6250 0 2500 0 0
+vertex   : -6250 0 5000 16383 0
+vertex   : -6250 2500 5000 16383 16383
+vertex   : -6250 2500 2500 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:WALL1
+}
+}
+
+* right side rampage
+* edits: copied of the fixed lefty ramp, and flippied where i thought it
+*        needed it, but don't hold me to it (:
+
+#ihull
+{
+#pgroup
+{
+vertex   : 6250 0 2500
+vertex   : 8750 0 2500
+vertex   : 8750 2500 -2500
+vertex   : 6250 2500 -2500
+numx     : 1
+numy     : 2
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+* bit i shiftzed from the walkway top
+
+#poly
+{
+numverts : 4
+vertex   : 6250 0 5000 0 0
+vertex   : 8750 0 5000 16383 0
+vertex   : 8750 0 2500 16383 16383
+vertex   : 6250 0 2500 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:FLOOR1
+}
+
+* cap for the bit touching the side wall
+
+#poly
+{
+numverts : 4
+vertex   : 8750 2500 -2500 16383 16383
+vertex   : 8750 0 2500 16383 0
+vertex   : 8750 0 5000 0 0
+vertex   : 8750 2500 5000 0 16383
+texture  : !NULL!
+}
+
+* cap for underneathy
+
+#poly
+{
+numverts : 4
+vertex   : 8750 2500 5000 0 0
+vertex   : 6250 2500 5000 16383 0
+vertex   : 6250 2500 -2500 16383 16383
+vertex   : 8750 2500 -2500 0 16383
+texture  : !NULL!
+}
+
+* and a final cap for the backerooooooooooSNA
+
+#poly
+{
+numverts : 4
+vertex   : 8750 0 5000 16383 0
+vertex   : 6250 0 5000 0 0
+vertex   : 6250 2500 5000 0 16383
+vertex   : 8750 2500 5000 16383 16383
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 3
+vertex   : 6250 2500 0 0 0
+vertex   : 6250 1250 0 0 8191
+vertex   : 6250 2500 -2500 16383 0
+texture  : CORE\TEXPACKS\RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 6250 0 2500 0 0
+vertex   : 6250 1250 0 16383 8191
+vertex   : 6250 2500 0 16383 16383
+vertex   : 6250 2500 2500 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:WALL1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 6250 0 5000 0 0
+vertex   : 6250 0 2500 16383 0
+vertex   : 6250 2500 2500 16383 16383
+vertex   : 6250 2500 5000 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:WALL1
+}
+}
+
+* ? capped pillaaaaaaaaaarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+* edits: capped?
+
+#ihull
+{
+
+* bork, top
+
+#poly
+{
+numverts : 4
+vertex   : -750 250 4500 0 0
+vertex   : 750 250 4500 8191 0
+vertex   : 750 250 3000 8191 16383
+vertex   : -750 250 3000 0 16383
+texture  : !NULL!
+}
+
+* bork, bottom
+
+#poly
+{
+numverts : 4
+vertex   : 750 2500 4500 8191 0
+vertex   : -750 2500 4500 0 0
+vertex   : -750 2500 3000 0 16383
+vertex   : 750 2500 3000 8191 16383
+texture  : !NULL!
+}
+
+#poly
+{
+numverts : 4
+vertex   : -750 250 3000 0 0
+vertex   : 750 250 3000 16383 0
+vertex   : 750 2500 3000 16383 16383
+vertex   : -750 2500 3000 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:PILLAR_1
+}
+
+#poly
+{
+numverts : 4
+vertex   : -750 250 4500 0 0
+vertex   : -750 250 3000 16383 0
+vertex   : -750 2500 3000 16383 16383
+vertex   : -750 2500 4500 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:AMBT1_1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 750 250 3000 0 0
+vertex   : 750 250 4500 16383 0
+vertex   : 750 2500 4500 16383 16383
+vertex   : 750 2500 3000 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:AMBT1_1
+}
+
+#poly
+{
+numverts : 4
+vertex   : 750 250 4500 0 0
+vertex   : -750 250 4500 16383 0
+vertex   : -750 2500 4500 16383 16383
+vertex   : 750 2500 4500 0 16383
+texture  : CORE\TEXPACKS\RAMPSSB:PILLAR_2
+}
+
+}
+
+}

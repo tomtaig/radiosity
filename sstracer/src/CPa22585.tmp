@@ -1,0 +1,1 @@
+/nologo /ML /W3 /GX /O2 /D"WIN32" /D"NDEBUG" /D"_CONSOLE" /D"_MBCS" /Fp"Release/sstracer.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c "C:\My Documents\programming\misc\subshock\sstracer\sstracer\src\sstracer\texpack.c"

@@ -1,0 +1,22 @@
+; sstracer configuration file
+
+!rad_reflection 0.01
+%rad_vispasses 1
+!rad_lowerbound 0.001
+!rad_formerror 0.0001
+!rad_centricerror 0.001
+%rnd_showaxis 0
+%rnd_texels 0
+%rnd_cullbacks 0
+%app_windowed 1
+!rnd_scenescale 0.008
+!rnd_brightness 4.0
+%rnd_filter 0
+%rnd_mipmap 0
+%rnd_mode 0
+%app_showfps 1
+$app_message "Windowed mode"
+$app_display "800x600:16@40"
+$app_input "rampssb.ssb"
+$app_output "rampssb.lmp"
+
