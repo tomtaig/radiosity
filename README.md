@@ -8,3 +8,7 @@ A simple test scene!
 ![alt text](https://github.com/tomtaig/radiosity/blob/master/simple-test.jpg)
 
 I lost my Quake 1 lit screenshots.
+
+update: I FOUND ONE
+
+![alt text](https://github.com/tomtaig/radiosity/blob/master/quake1.jpg)
