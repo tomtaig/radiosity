@@ -1,7 +1,7 @@
 # radiosity
 Global illumination using radiosity
 
-A very old project that can produce lightmaps in a 3d world.
+A very old (2001) project that can produce lightmaps in a 3d world.
 
 I lost my Quake 1 lit screenshots.
 
